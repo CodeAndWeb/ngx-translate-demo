@@ -1,0 +1,18 @@
+{
+	"demo": {
+		"greeting": "Hallo {{name}}!",
+		"heading": {
+			"simple": "Einfache Übersetzungen",
+			"switching_languages": "Sprachumschaltung",
+			"with_parameters": "Übersetzung mit Parametern",
+			"non-existing": "Fehlende Übersetzung"
+		},
+		"text": "Eine einfache Demo-App für ngx-translate",
+		"title": "Übersetzungs-Demo"
+	},
+	"does": {
+		"not": {
+			"exist": ""
+		}
+	}
+}

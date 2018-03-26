@@ -8,7 +8,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "extract-translations": "ngx-translate-extract --input ./src --output ./src/assets/i18n/*.json --clean --sort --format namespaced-json --marker _"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +22,9 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@biesbjerg/ngx-translate-extract": "^2.3.4",
+    "@ngx-translate/core": "^9.1.1",
+    "@ngx-translate/http-loader": "^2.0.1",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
