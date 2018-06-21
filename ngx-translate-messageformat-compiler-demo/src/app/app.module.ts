@@ -7,7 +7,6 @@ import {TranslateCompiler, TranslateLoader, TranslateModule} from '@ngx-translat
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 
-import { PruningTranslationLoader } from './pruning-loader';
 import {TranslateMessageFormatCompiler} from "ngx-translate-messageformat-compiler";
 
 @NgModule({
@@ -37,6 +36,5 @@ export class AppModule {
 
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient) {
-    return new PruningTranslationLoader(http);
-//    return new TranslateHttpLoader(http);
+    return new TranslateHttpLoader(http);
 }
