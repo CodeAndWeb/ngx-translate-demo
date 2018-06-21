@@ -1,47 +1,14 @@
-<div class="container mt-4">
+<h1>{{ 'demo.title' | translate }}</h1>
 
-    <!-- translation: translation pipe -->
-    <h1>{{ 'demo.title' | translate }}</h1>
+<!-- translation: translation pipe -->
+<p>{{ 'demo.greeting' | translate:{'name':'Andreas'} }}</p>
 
-    <h2 translate>demo.heading.simple</h2>
+<!-- translation: directive (key as attribute) -->
+<p [translate]="'demo.greeting'" [translateParams]="{name: 'Andreas'}"></p>
 
-    <!-- translation: pipe -->
-    <code ngNonBindable>{{ 'demo.text' | translate}}</code>
-    <p>{{ 'demo.text' | translate}}</p>
+<!-- translation: directive (key as content of element)-->
+<p translate [translateParams]="{name: 'Andreas'}">demo.greeting</p>
 
-    <!-- translation: directive (key as attribute) -->
-    <code>&lt;p [translate]="'demo.text'">&lt;/p></code>
-    <p [translate]="'demo.text'"></p>
 
-    <!-- translation: directive (key as content of element) -->
-    <code>&lt;p translate>demo.text&lt;/p></code>
-    <p translate>demo.text</p>
-
-    <h2 translate>demo.heading.with_parameters</h2>
-
-    <!-- translation: translation pipe -->
-    <code ngNonBindable>{{ 'demo.greeting' | translate:{'name':'Andreas'} }}</code>
-    <p>{{ 'demo.greeting' | translate:{'name':'Andreas'} }}</p>
-
-    <!-- translation: directive (key as attribute) -->
-    <code>&lt;p [translate]="'demo.greeting'" [translateParams]="{{ '{' }}name: 'Andreas'}">&lt;/p></code>
-    <p [translate]="'demo.greeting'" [translateParams]="{name: 'Andreas'}"></p>
-
-    <!-- translation: directive (key as content of element)-->
-    <code>&lt;p translate [translateParams]="{{ '{' }}name: 'Andreas'}">demo.greeting&lt;/p></code>
-    <p translate [translateParams]="{name: 'Andreas'}">demo.greeting</p>
-
-    <h2 translate>demo.heading.non-existing</h2>
-    <code ngNonBindable>{{ 'does.not.exist' | translate}}</code>
-    <p>{{ 'does.not.exist' | translate}}</p>
-
-    <!-- switch language -->
-    <h2 translate>demo.heading.switching_languages</h2>
-    <code>
-        &lt;button class="btn btn-primary" (click)="useLanguage('en')">en&lt;/button><br/>
-        &lt;button class="btn btn-primary" (click)="useLanguage('de')">de&lt;/button>
-    </code>
-    <br/>
-    <button class="btn btn-primary" (click)="useLanguage('en')">en</button>
-    <button class="btn btn-primary" (click)="useLanguage('de')">de</button>
-</div>
+<button (click)="useLanguage('en')">en</button>
+<button (click)="useLanguage('de')">de</button>

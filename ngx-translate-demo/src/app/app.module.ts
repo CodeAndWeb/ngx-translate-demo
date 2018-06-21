@@ -3,11 +3,9 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 
 // import ngx-translate and the http loader
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-
-import { PruningTranslationLoader } from './pruning-loader';
 
 @NgModule({
     declarations: [
@@ -32,6 +30,5 @@ export class AppModule {
 
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient) {
-//    return new PruningTranslationLoader(http);
     return new TranslateHttpLoader(http);
 }
