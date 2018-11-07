@@ -1,9 +1,10 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 
 // import ngx-translate and the http loader
-import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 
@@ -13,6 +14,9 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     ],
     imports: [
         BrowserModule,
+        AppRoutingModule,
+
+        // configure the imports
         HttpClientModule,
         TranslateModule.forRoot({
             loader: {
@@ -25,6 +29,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     providers: [],
     bootstrap: [AppComponent]
 })
+
 export class AppModule {
 }
 

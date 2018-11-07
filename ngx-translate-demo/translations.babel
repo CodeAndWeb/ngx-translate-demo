@@ -1,7 +1,7 @@
 <babeledit_project version="1.0">
     <preset_collections/>
     <framework>ngx-translate</framework>
-    <filename>translations.babel</filename>
+    <filename>Translations.babel</filename>
     <folder_node>
         <name></name>
         <children>
@@ -10,6 +10,40 @@
                 <children>
                     <concept_node>
                         <name>greeting</name>
+                        <definition_loaded>false</definition_loaded>
+                        <description></description>
+                        <comment></comment>
+                        <default_text></default_text>
+                        <translations>
+                            <translation>
+                                <language>de-DE</language>
+                                <approved>false</approved>
+                            </translation>
+                            <translation>
+                                <language>en-US</language>
+                                <approved>false</approved>
+                            </translation>
+                        </translations>
+                    </concept_node>
+                    <concept_node>
+                        <name>text</name>
+                        <definition_loaded>false</definition_loaded>
+                        <description></description>
+                        <comment></comment>
+                        <default_text></default_text>
+                        <translations>
+                            <translation>
+                                <language>de-DE</language>
+                                <approved>false</approved>
+                            </translation>
+                            <translation>
+                                <language>en-US</language>
+                                <approved>false</approved>
+                            </translation>
+                        </translations>
+                    </concept_node>
+                    <concept_node>
+                        <name>text-in-code</name>
                         <definition_loaded>false</definition_loaded>
                         <description></description>
                         <comment></comment>
@@ -48,12 +82,12 @@
     </folder_node>
     <translation_files>
         <translation_file>
-            <language>de-DE</language>
-            <file>src/assets/i18n/de.json</file>
-        </translation_file>
-        <translation_file>
             <language>en-US</language>
             <file>src/assets/i18n/en.json</file>
+        </translation_file>
+        <translation_file>
+            <language>de-DE</language>
+            <file>src/assets/i18n/de.json</file>
         </translation_file>
     </translation_files>
     <editor_configuration>
@@ -66,6 +100,6 @@
     <primary_language></primary_language>
     <configuration>
         <indent>tab</indent>
-        <format>namespaced-json</format>
+        <format>json</format>
     </configuration>
 </babeledit_project>

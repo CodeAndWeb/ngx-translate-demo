@@ -1,14 +1,46 @@
-<h1>{{ 'demo.title' | translate }}</h1>
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
 
-<!-- translation: translation pipe -->
-<p>{{ 'demo.greeting' | translate:{'name':'Andreas'} }}</p>
+  <h2>{{ 'demo.title' | translate }}</h2>
 
-<!-- translation: directive (key as attribute) -->
-<p [translate]="'demo.greeting'" [translateParams]="{name: 'Andreas'}"></p>
+  <h3>Simple translations without parameters</h3>
 
-<!-- translation: directive (key as content of element)-->
-<p translate [translateParams]="{name: 'Andreas'}">demo.greeting</p>
+  <!-- translation: translation pipe -->
+  <h4>Pipe</h4>
+  <p>{{ 'demo.text' | translate }}</p>
+
+  <h4>Directive: key as attribute</h4>
+  <!-- translation: directive (key as attribute)-->
+  <p [translate]="'demo.text'"></p>
+
+  <h4>Directive: key as content</h4>
+  <!-- translation: directive (key as content of element) -->
+  <p translate>demo.text</p>
 
 
-<button (click)="useLanguage('en')">en</button>
-<button (click)="useLanguage('de')">de</button>
+  <h3>Translations with parameters</h3>
+
+  <h4>Pipe</h4>
+  <!-- translation: translation pipe -->
+  <p>{{ 'demo.greeting' | translate:{'name':'Andreas'} }}</p>
+
+  <h4>Directive: key as attribute</h4>
+  <!-- translation: directive (key as attribute) -->
+  <p [translate]="'demo.greeting'" [translateParams]="{name: 'Andreas'}"></p>
+
+  <h4>Directive: key as content</h4>
+  <!-- translation: directive (key as content of element)-->
+  <p translate [translateParams]="{name: 'Andreas'}">demo.greeting</p>
+
+  <h3>Translation IDs from code</h3>
+
+  <p>{{ fromCode | translate }}</p>
+
+  <h3>Switching languages at runtime</h3>
+
+  <button (click)="useLanguage('en')">en</button>
+  <button (click)="useLanguage('de')">de</button>
+
+</div>
+
+<router-outlet></router-outlet>
