@@ -2,11 +2,14 @@
 
     <h2>ngx-translate-messageformat-compiler demo</h2>
 
+    <h4>Plurals</h4>
     <ul>
         <li translate [translateParams]="{ count: 0 }">pluralization.things</li>
         <li translate [translateParams]="{ count: 1 }">pluralization.things</li>
         <li>{{'pluralization.things' | translate:"{ count: 2 }"}}</li>
     </ul>
+
+    <h4>Selection</h4>
     <ul>
         <li translate [translateParams]="{ gender: 'female', name: 'Sarah' }">pluralization.people</li>
         <li translate [translateParams]="{ gender: 'male', name: 'Peter' }">pluralization.people</li>

@@ -1,7 +1,7 @@
 <babeledit_project version="1.0">
     <preset_collections/>
     <framework>ngx-translate</framework>
-    <filename></filename>
+    <filename>Translations.babel</filename>
     <folder_node>
         <name></name>
         <children>
@@ -25,81 +25,25 @@
                             </translation>
                         </translations>
                     </concept_node>
-                    <folder_node>
-                        <name>heading</name>
-                        <children>
-                            <concept_node>
-                                <name>simple</name>
-                                <definition_loaded>false</definition_loaded>
-                                <description></description>
-                                <comment></comment>
-                                <default_text></default_text>
-                                <translations>
-                                    <translation>
-                                        <language>de-DE</language>
-                                        <approved>false</approved>
-                                    </translation>
-                                    <translation>
-                                        <language>en-US</language>
-                                        <approved>false</approved>
-                                    </translation>
-                                </translations>
-                            </concept_node>
-                            <concept_node>
-                                <name>switching_languages</name>
-                                <definition_loaded>false</definition_loaded>
-                                <description></description>
-                                <comment></comment>
-                                <default_text></default_text>
-                                <translations>
-                                    <translation>
-                                        <language>de-DE</language>
-                                        <approved>false</approved>
-                                    </translation>
-                                    <translation>
-                                        <language>en-US</language>
-                                        <approved>false</approved>
-                                    </translation>
-                                </translations>
-                            </concept_node>
-                            <concept_node>
-                                <name>with_parameters</name>
-                                <definition_loaded>false</definition_loaded>
-                                <description></description>
-                                <comment></comment>
-                                <default_text></default_text>
-                                <translations>
-                                    <translation>
-                                        <language>de-DE</language>
-                                        <approved>false</approved>
-                                    </translation>
-                                    <translation>
-                                        <language>en-US</language>
-                                        <approved>false</approved>
-                                    </translation>
-                                </translations>
-                            </concept_node>
-                            <concept_node>
-                                <name>non-existing</name>
-                                <definition_loaded>false</definition_loaded>
-                                <description></description>
-                                <comment></comment>
-                                <default_text></default_text>
-                                <translations>
-                                    <translation>
-                                        <language>de-DE</language>
-                                        <approved>false</approved>
-                                    </translation>
-                                    <translation>
-                                        <language>en-US</language>
-                                        <approved>false</approved>
-                                    </translation>
-                                </translations>
-                            </concept_node>
-                        </children>
-                    </folder_node>
                     <concept_node>
                         <name>text</name>
+                        <definition_loaded>false</definition_loaded>
+                        <description></description>
+                        <comment></comment>
+                        <default_text></default_text>
+                        <translations>
+                            <translation>
+                                <language>de-DE</language>
+                                <approved>false</approved>
+                            </translation>
+                            <translation>
+                                <language>en-US</language>
+                                <approved>false</approved>
+                            </translation>
+                        </translations>
+                    </concept_node>
+                    <concept_node>
+                        <name>text-in-code</name>
                         <definition_loaded>false</definition_loaded>
                         <description></description>
                         <comment></comment>
@@ -134,47 +78,16 @@
                     </concept_node>
                 </children>
             </folder_node>
-            <folder_node>
-                <name>does</name>
-                <children>
-                    <folder_node>
-                        <name>not</name>
-                        <children>
-                            <concept_node>
-                                <name>exist</name>
-                                <definition_loaded>false</definition_loaded>
-                                <description></description>
-                                <comment></comment>
-                                <default_text></default_text>
-                                <translations>
-                                    <translation>
-                                        <language>de-DE</language>
-                                        <approved>false</approved>
-                                    </translation>
-                                    <translation>
-                                        <language>en-US</language>
-                                        <approved>false</approved>
-                                    </translation>
-                                </translations>
-                            </concept_node>
-                        </children>
-                    </folder_node>
-                </children>
-            </folder_node>
         </children>
     </folder_node>
     <translation_files>
         <translation_file>
-            <language>de-DE</language>
-            <file>src/assets/i18n/de.json</file>
-            <file_size>364</file_size>
-            <modification_timestamp>1522085454</modification_timestamp>
-        </translation_file>
-        <translation_file>
             <language>en-US</language>
             <file>src/assets/i18n/en.json</file>
-            <file_size>371</file_size>
-            <modification_timestamp>1522085454</modification_timestamp>
+        </translation_file>
+        <translation_file>
+            <language>de-DE</language>
+            <file>src/assets/i18n/de.json</file>
         </translation_file>
     </translation_files>
     <editor_configuration>
@@ -187,6 +100,6 @@
     <primary_language></primary_language>
     <configuration>
         <indent>tab</indent>
-        <format>namespaced-json</format>
+        <format>json</format>
     </configuration>
 </babeledit_project>
