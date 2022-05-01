@@ -1,7 +1,7 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppComponent } from './app.component';
 
 // import ngx-translate and the http loader
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
@@ -14,9 +14,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
-
-        // configure the imports
+        // ngx-translate and the loader module
         HttpClientModule,
         TranslateModule.forRoot({
             loader: {
@@ -29,11 +27,9 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     providers: [],
     bootstrap: [AppComponent]
 })
-
-export class AppModule {
-}
+export class AppModule { }
 
 // required for AOT compilation
-export function HttpLoaderFactory(http: HttpClient) {
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     return new TranslateHttpLoader(http);
 }

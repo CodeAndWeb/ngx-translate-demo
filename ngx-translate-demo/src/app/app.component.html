@@ -3,6 +3,11 @@
 
   <h2>{{ 'demo.title' | translate }}</h2>
 
+  <h3>Switch languages at runtime:</h3>
+
+  <button (click)="useLanguage('en')">en</button>
+  <button (click)="useLanguage('de')">de</button>
+
   <h3>Simple translations without parameters</h3>
 
   <!-- translation: translation pipe -->
@@ -32,15 +37,16 @@
   <!-- translation: directive (key as content of element)-->
   <p translate [translateParams]="{name: 'Andreas'}">demo.greeting</p>
 
-  <h3>Translation IDs from code</h3>
+  <h3>Using translation IDs in your component</h3>
+  <p>{{ idFromCode | translate }}</p>
 
-  <p>{{ fromCode | translate }}</p>
+  <h3>Text translated in code</h3>
 
-  <h3>Switching languages at runtime</h3>
+  <h4>Translated once (does not support switching langues at runtime)</h4>
+  <p>{{ translatedMessageFromCode }}</p>
 
-  <button (click)="useLanguage('en')">en</button>
-  <button (click)="useLanguage('de')">de</button>
+  <h4>Continuous update (supports language switching)</h4>
+  <p>{{ continuouslyTranslatedMessage}}</p>
+
 
 </div>
-
-<router-outlet></router-outlet>

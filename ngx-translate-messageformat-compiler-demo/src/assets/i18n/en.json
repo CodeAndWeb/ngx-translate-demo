@@ -1,6 +1,16 @@
 {
-	"pluralization": {
-		"things": "There {count, plural, =0{is} one{is} other{are}} {count, plural, =0{} one{a} other{several}} {count, plural, =0{nothing} one{thing} other{things}}",
-		"people": "{gender, select, male{His name is} female{Her name is} other{Their names are }} {name}"
-	}
+  "demo": {
+    "greeting": "Hello {name}!",
+    "text": "This is a simple demonstration app for ngx-translate",
+    "title": "Translation demo"
+  },
+  "icu": {
+    "pluralization": "There {count, plural, =0{is no apple} one{is one apple} other{there are several apples}}.",
+    "select": "{gender, select, male{His uses} female{She uses} other{They use }} {product}"
+  },
+  "messagebox": {
+    "warning": {
+      "text": "Warning!"
+    }
+  }
 }

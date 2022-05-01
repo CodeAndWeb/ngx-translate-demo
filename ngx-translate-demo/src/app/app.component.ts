@@ -1,21 +1,41 @@
-import {Component} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-import {_} from '@biesbjerg/ngx-translate-extract/dist/utils/utils';
-
-import defaultLanguage from "./../assets/i18n/en.json";
+import { marker as _ } from '@biesbjerg/ngx-translate-extract-marker';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+    styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy {
 
-    fromCode = _('demo.text-in-code');
+    subscription: Subscription | undefined;
+
+    idFromCode = _('demo.text-in-code');
+
+    translatedMessageFromCode = "";
+    continuouslyTranslatedMessage = "";
 
     constructor(private translate: TranslateService) {
-        translate.setTranslation('en', defaultLanguage);
         translate.setDefaultLang('en');
+        translate.use('en');
+    }
+
+    ngOnInit() {
+        // translate message once
+        this.translate.get('demo.greeting', {name: 'John'}).subscribe((res: string) => {
+            this.translatedMessageFromCode = res;
+        });
+
+        // continuously update the property
+        this.subscription = this.translate.stream('demo.greeting', {name: 'John'}).subscribe((res: string) => {
+            this.continuouslyTranslatedMessage = res;
+        });
+    }
+
+    ngOnDestroy() {
+        this.subscription?.unsubscribe()
     }
 
     useLanguage(language: string) {
