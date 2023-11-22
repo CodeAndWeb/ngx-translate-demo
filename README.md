@@ -1,7 +1,7 @@
 # How to translate your Angular application
 
 <a href="https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular-app-with-ngx-translate">
-![Tutorial Image](./tutorial.png)
+	<img alt="Tutorial Image" src="./tutorial.png"/>
 </a>
 
 Simple demo project for Anguar and ngx-translate 
