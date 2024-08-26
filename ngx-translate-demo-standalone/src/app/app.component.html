@@ -1,0 +1,25 @@
+<div class="title">
+
+    <h1>{{ 'demo.title' | translate }}</h1>
+
+    <span>Switch languages at runtime: </span>
+    <button (click)="useLanguage('en')">en</button>
+    <button (click)="useLanguage('de')">de</button>
+
+</div>
+<div>
+
+    <h2>Simple translations without parameters</h2>
+
+    <p>{{ 'demo.simple.text-with-pipe' | translate }}</p>
+    <p [translate]="'demo.simple.text-as-attribute'"></p>
+    <p translate>demo.simple.text-as-content</p>
+
+
+    <h2>Translations with parameters</h2>
+
+    <p>{{ 'demo.interpolation.pipe-with-parameters' | translate:{name} }}</p>
+    <p [translate]="'demo.interpolation.attribute-with-parameters'" [translateParams]="{name}"></p>
+    <p translate [translateParams]="{name}">demo.interpolation.id-as-content-with-parameters</p>
+
+</div>

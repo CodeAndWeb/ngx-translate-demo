@@ -1,0 +1,15 @@
+{
+	"demo": {
+		"interpolation": {
+			"attribute-with-parameters": "Hallo {{name}}, wie geht es Ihnen?",
+			"id-as-content-with-parameters": "Hey {{name}}, wie geht's?",
+			"pipe-with-parameters": "Hallo {{name}}, ich hoffe, es geht Ihnen gut!"
+		},
+		"simple": {
+			"text-as-attribute": "Ein einfacher Text, der die ID als Attribut enthält.",
+			"text-as-content": "Ein einfacher Test mit der ID als Inhalt.",
+			"text-with-pipe": "Ein einfacher Text unter Verwendung der Pipe."
+		},
+		"title": "Übersetzungs Demo"
+	}
+}

@@ -1,0 +1,33 @@
+<div class="title">
+    <h1>ngx-translate message format compiler demo</h1>
+
+    <span>Switch languages at runtime: </span>
+    <button (click)="useLanguage('en')">en</button>
+    <button (click)="useLanguage('de')">de</button>
+</div>
+
+<div>
+    <h3>Pluralization</h3>
+
+    <label for="count-select">Select count: </label>
+    <select id="count-select" [(ngModel)]="count" (change)="onCountChange($event)">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="5">5</option>
+    </select>
+
+    <p id="icuPluralization" translate [translateParams]="{count}">icu.pluralization</p>
+    <p>{{'icu.pluralization' | translate:{ count } }}</p>
+
+    <h3>Selection</h3>
+
+    <label for="gender-select">Select Gender: </label>
+        <select id="gender-select" [(ngModel)]="gender" (change)="onGenderChange($event)">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <p id="icuSelect" translate [translateParams]="{ gender, 'product': 'BabelEdit' }">icu.select</p>
+    <p>{{'icu.select' | translate:{ gender, 'product': 'BabelEdit' } }}</p>
+</div>

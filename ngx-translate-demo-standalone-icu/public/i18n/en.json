@@ -1,0 +1,6 @@
+{
+	"icu": {
+		"pluralization": "There {count, plural, =0{is no apple} one{is one apple} other{there are several apples}}.",
+		"select": "{gender, select, male{He uses} female{She uses} other{They use }} {product}"
+	}
+}
