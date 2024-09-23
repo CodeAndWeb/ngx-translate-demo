@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {} from 'jasmine';
-import {TranslateLoader, TranslateModule, TranslateService} from "@ngx-translate/core";
+import {TranslateLoader, TranslateModule, TranslateService} from "@codeandweb/ngx-translate";
 import {StaticTranslationLoader} from "./static-translations-loader";
 
 describe('AppComponent Localized', () => {

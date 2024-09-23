@@ -20,8 +20,8 @@
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@colsen1991/ngx-translate-extract-marker": "^2.0.8",
-    "@ngx-translate/core": "^15.0.0",
-    "@ngx-translate/http-loader": "^8.0.0",
+    "@codeandweb/ngx-translate": "^16.0.0-beta.1",
+    "@codeandweb/http-loader": "^16.0.0-beta.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
