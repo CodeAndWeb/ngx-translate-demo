@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {} from 'jasmine';
-import {TranslateModule} from "@codeandweb/ngx-translate";
+import {provideTranslateService} from "@codeandweb/ngx-translate";
 
 
 describe('AppComponent', () => {
@@ -9,7 +9,7 @@ describe('AppComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         AppComponent,
-        TranslateModule.forRoot({})
+        provideTranslateService()
       ],
     }).compileComponents();
   });

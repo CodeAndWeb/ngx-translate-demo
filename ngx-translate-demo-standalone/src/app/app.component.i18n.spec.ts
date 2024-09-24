@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {} from 'jasmine';
-import {TranslateLoader, TranslateModule, TranslateService} from "@codeandweb/ngx-translate";
+import {provideTranslateService, TranslateLoader, TranslateService} from "@codeandweb/ngx-translate";
 import {StaticTranslationLoader} from "./static-translations-loader";
 
 describe('AppComponent Localized', () => {
@@ -9,13 +9,15 @@ describe('AppComponent Localized', () => {
     await TestBed.configureTestingModule({
       imports: [
         AppComponent,
-        TranslateModule.forRoot({
+      ],
+      providers: [
+        provideTranslateService({
           loader: {
             provide: TranslateLoader,
             useClass: StaticTranslationLoader,
           },
-        })],
-      providers: []
+        })
+      ]
     }).compileComponents();
   });
 

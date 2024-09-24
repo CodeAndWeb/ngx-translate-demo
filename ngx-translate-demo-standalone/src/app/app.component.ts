@@ -1,5 +1,5 @@
 import {Component, OnDestroy} from "@angular/core";
-import {TranslateModule, TranslateService} from "@codeandweb/ngx-translate";
+import {TranslateDirective, TranslatePipe, TranslateService} from "@codeandweb/ngx-translate";
 import { marker as _ } from '@colsen1991/ngx-translate-extract-marker';
 import {Subscription} from "rxjs";
 
@@ -7,7 +7,7 @@ import {Subscription} from "rxjs";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslatePipe, TranslateDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

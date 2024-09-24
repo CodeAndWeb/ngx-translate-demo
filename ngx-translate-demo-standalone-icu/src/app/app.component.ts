@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {TranslateModule, TranslateService} from "@codeandweb/ngx-translate";
+import {TranslateDirective, TranslatePipe, TranslateService} from "@codeandweb/ngx-translate";
 import {FormsModule} from "@angular/forms";
 
 type Gender = 'male'|'female'|'other';
@@ -7,7 +7,7 @@ type Gender = 'male'|'female'|'other';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [TranslateModule, FormsModule],
+  imports: [TranslatePipe, TranslateDirective, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
