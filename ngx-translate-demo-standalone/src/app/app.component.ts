@@ -1,6 +1,5 @@
 import {Component, OnDestroy} from "@angular/core";
-import {TranslateDirective, TranslatePipe, TranslateService} from "@codeandweb/ngx-translate";
-import { marker as _ } from '@colsen1991/ngx-translate-extract-marker';
+import {TranslateDirective, TranslatePipe, TranslateService, _} from "@codeandweb/ngx-translate";
 import {Subscription} from "rxjs";
 
 
