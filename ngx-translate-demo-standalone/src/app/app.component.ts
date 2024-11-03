@@ -1,5 +1,5 @@
 import {Component, OnDestroy} from "@angular/core";
-import {TranslateDirective, TranslatePipe, TranslateService, _} from "@codeandweb/ngx-translate";
+import {TranslateDirective, TranslatePipe, TranslateService, _} from "@ngx-translate/core";
 import {Subscription} from "rxjs";
 
 
@@ -17,6 +17,7 @@ export class AppComponent implements OnDestroy {
   private subscription: Subscription;
 
   constructor(private translate: TranslateService) {
+    
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('en');
     this.translate.use(this.translate.getBrowserLang() || "en");

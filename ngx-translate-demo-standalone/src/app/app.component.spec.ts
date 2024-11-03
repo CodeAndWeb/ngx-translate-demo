@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {} from 'jasmine';
-import {provideTranslateService} from "@codeandweb/ngx-translate";
+import {provideTranslateService} from "@ngx-translate/core";
 
 
 describe('AppComponent', () => {

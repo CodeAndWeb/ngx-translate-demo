@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {TranslateDirective, TranslatePipe, TranslateService} from "@codeandweb/ngx-translate";
+import {TranslateDirective, TranslatePipe, TranslateService} from "@ngx-translate/core";
 import {FormsModule} from "@angular/forms";
 
 type Gender = 'male'|'female'|'other';

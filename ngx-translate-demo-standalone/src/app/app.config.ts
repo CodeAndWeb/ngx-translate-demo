@@ -1,7 +1,7 @@
 import {ApplicationConfig, provideZoneChangeDetection} from "@angular/core";
 import {provideHttpClient} from "@angular/common/http";
-import {TranslateLoader, provideTranslateService} from "@codeandweb/ngx-translate";
-import {TranslateHttpLoader} from '@codeandweb/http-loader';
+import {TranslateLoader, provideTranslateService} from "@ngx-translate/core";
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient} from '@angular/common/http';
 
 const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (http: HttpClient) =>

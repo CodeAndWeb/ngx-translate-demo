@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {} from 'jasmine';
-import {TranslateCompiler, TranslateLoader, TranslateModule, TranslateService} from "@codeandweb/ngx-translate";
+import {TranslateCompiler, TranslateLoader, TranslateModule, TranslateService} from "@ngx-translate/core";
 import {StaticTranslationLoader} from "./static-translations-loader";
 import {TranslateMessageFormatCompiler} from "ngx-translate-messageformat-compiler";
 

@@ -1,5 +1,5 @@
 import {Component, OnDestroy} from "@angular/core";
-import {TranslateService, _} from "@codeandweb/ngx-translate";
+import {TranslateService, _} from "@ngx-translate/core";
 import {Subscription} from "rxjs";
 
 

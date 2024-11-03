@@ -1,4 +1,4 @@
-import {TranslateLoader, Translation} from "@codeandweb/ngx-translate";
+import {TranslateLoader, Translation} from "@ngx-translate/core";
 import { Observable, of } from 'rxjs';
 
 import * as TranslationsDE from '../../public/i18n/de.json';
