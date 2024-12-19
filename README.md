@@ -4,7 +4,7 @@
 	<img alt="Tutorial Image" src="./tutorial.png"/>
 </a>
 
-Simple 3 demo projects for Anguar and ngx-translate.
+Simple 3 demo projects for Angular and ngx-translate.
 
 - **ngx-translate-demo-standalone** - uses standalone components
 - **ngx-translate-demo-standalone** - uses standalone modules and the ngx-translate-messageformat-compiler plugin to use ICU formatted translation messages
