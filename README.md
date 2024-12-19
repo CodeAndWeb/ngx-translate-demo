@@ -12,9 +12,9 @@ Simple 3 demo projects for Anguar and ngx-translate.
 
 Read the tutorial [How to translate your Angular app with ngx-translate](https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular-app-with-ngx-translate) for more information about how to use ngx-translate, ngx-translate-extract and BabelEdit.
 
-The repository also contains demo projects working with Angular 18.
+The repository also contains demo projects working with Angular 19.
 
-The demo is also available for older Angular versions from 5-17: Please check the branches.
+The demo is also available for older Angular versions from 5-18: Please check the branches.
 
 Tutorials for the older version of Angular:
 
