@@ -1,6 +1,5 @@
 import {Component, OnDestroy} from "@angular/core";
-import {TranslateService} from "@ngx-translate/core";
-import { marker as _ } from '@colsen1991/ngx-translate-extract-marker';
+import {TranslateService, _} from "@ngx-translate/core";
 import {Subscription} from "rxjs";
 
 
