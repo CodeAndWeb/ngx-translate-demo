@@ -14,7 +14,7 @@ const TRANSLATIONS: Translation = {
 };
 
 export class StaticTranslationLoader implements TranslateLoader {
-    public getTranslation(lang: string): Observable<Translation|string> {
+    public getTranslation(lang: string): Observable<TranslationObject> {
         const translation = TRANSLATIONS[lang];
         if (translation) {
             return of(translation);
