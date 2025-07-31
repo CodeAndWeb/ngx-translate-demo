@@ -1,16 +1,10 @@
 {
-	"demo": {
-		"interpolation": {
-			"attribute-with-parameters": "Attribut mit Parameter: Hallo {{name}}!",
-			"id-as-content-with-parameters": "ID als Inhalt mit Parameter: Hallo {{name}}!",
-			"instant": "Instant mit Parameter: Hallo {{name}}!",
-			"pipe-with-parameters": "Pipe mit Parameter: Hallo {{name}}!"
-		},
-		"simple": {
-			"text-as-attribute": "Ein einfacher Text, der die ID als Attribut enthält.",
-			"text-as-content": "Ein einfacher Test mit der ID als Inhalt.",
-			"text-with-pipe": "Ein einfacher Text unter Verwendung der Pipe."
-		},
-		"title": "Übersetzungs Demo"
-	}
+	"demo.interpolation.attribute-with-parameters": "Attribut mit Parameter: Hallo {{name}}!",
+	"demo.interpolation.id-as-content-with-parameters": "ID als Inhalt mit Parameter: Hallo {{name}}!",
+	"demo.interpolation.instant": "Instant mit Parameter: Hallo {{name}}!",
+	"demo.interpolation.pipe-with-parameters": "Pipe mit Parameter: Hallo {{name}}!",
+	"demo.simple.text-as-attribute": "Ein einfacher Text, der die ID als Attribut enthält.",
+	"demo.simple.text-as-content": "Ein einfacher Test mit der ID als Inhalt.",
+	"demo.simple.text-with-pipe": "Ein einfacher Text unter Verwendung der Pipe.",
+	"demo.title": "Übersetzungs Demo"
 }
