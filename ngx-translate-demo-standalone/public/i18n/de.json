@@ -1,9 +1,10 @@
 {
 	"demo": {
 		"interpolation": {
-			"attribute-with-parameters": "Hallo {{name}}, wie geht es Ihnen?",
-			"id-as-content-with-parameters": "Hey {{name}}, wie geht's?",
-			"pipe-with-parameters": "Hallo {{name}}, ich hoffe, es geht Ihnen gut!"
+			"attribute-with-parameters": "Attribut mit Parameter: Hallo {{name}}!",
+			"id-as-content-with-parameters": "ID als Inhalt mit Parameter: Hallo {{name}}!",
+			"instant": "Instant mit Parameter: Hallo {{name}}!",
+			"pipe-with-parameters": "Pipe mit Parameter: Hallo {{name}}!"
 		},
 		"simple": {
 			"text-as-attribute": "Ein einfacher Text, der die ID als Attribut enthält.",
