@@ -18,7 +18,7 @@ The demo is also available for older Angular versions from 5-18: Please check th
 
 Tutorials for the older version of Angular:
 
-* [How to translate your Angular 8-16 app with ngx-translate](http://localhost:8000/babeledit/tutorials/how-to-translate-your-angular8-16-app-with-ngx-translate)
-* [How to translate your Angular 7 app with ngx-translate](https://www.codeandweb.cawwork/babeledit/tutorials/how-to-translate-your-angular7-app-with-ngx-translate)
-* [How to translate your Angular 5/6 app with ngx-translate](https://www.codeandweb.cawwork/babeledit/tutorials/how-to-translate-your-angular6-app-with-ngx-translate)
+* [How to translate your Angular 8-16 app with ngx-translate](https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular8-16-app-with-ngx-translate)
+* [How to translate your Angular 7 app with ngx-translate](https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular7-app-with-ngx-translate)
+* [How to translate your Angular 5/6 app with ngx-translate](https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular6-app-with-ngx-translate)
 
